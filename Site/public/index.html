@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html lang="en" dir="ltr">
+  <head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAfBNYJeVLrgmkqUh2rFG5aQl4PpnGnxgo",
+    authDomain: "programming-site-3ff42.firebaseapp.com",
+    databaseURL: "https://programming-site-3ff42.firebaseio.com",
+    projectId: "programming-site-3ff42",
+    storageBucket: "programming-site-3ff42.appspot.com",
+    messagingSenderId: "73191115739",
+    appId: "1:73191115739:web:64844bd191b4892425b5fe",
+    measurementId: "G-8GTBC8LZ3T"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="index.js"></script>
+    <div class="ab">
+<h1>Create Your Account</h1></div>
+<img src="Capture.jpg" width="100%" height="100px">
+      <div>
+        <div class="dv">
+<form method="post">
+  <table width="100%">
+    <th><label>First Name</label>
+    <input type="text" placeholder="Enter your Firstname here" id="fm"></th>
+    <th><label for="">Last Name</label>
+    <input type="text" placeholder="Enter your Lastname here" id="lm"></th>
+  </table>
+  <br>
+  <br>
+  <div>
+    <label class="abc"><b>E-mail:</b></label>
+<br>
+<input type="email" placeholder="Enter your email here" id="em">
+<br>
+<br>
+<table width="100%"">
+  <td>
+    <label class="abc"><b>Username:</b></label>
+    <input type="text" placeholder="Choose your username..." id="um">
+  </td>
+  <td>
+    <label class="abc"><b>Password:</b></label>
+    <input type="password" placeholder="Choose your password..." id="pd">
+  </td>
+</table>
+<br>
+<br>
+<label class="abc">Gender:</label>
+<input type="radio" name="ab" value="Male" id="m">Male
+<input type="radio" name="ab" value="Female" id="f">Female
+<input type="radio" name="ab" value="Others" id="o">Others
+
+<label class="abc">Mobile No:</label>
+<input type="text" placeholder="Enter your Mobile number " id ="mb"></th>
+  </div>
+  <hr>
+  <table width="100%">
+    <th><input type="submit"  value="Register" onclick="startsve()"></th>
+    <th><input type="reset"  value="Clear"></th>
+  </table>
+</form>
+</div>
+</div>
+</body>
+</html>
